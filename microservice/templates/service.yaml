@@ -1,0 +1,16 @@
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.appName }}
+spec:
+  selector:
+    app: {{ .Values.appName }}
+  type: {{ .Values.serviceType }} 
+  ports:
+  - name: {{ .Values.appName }}
+    protocol: TCP
+    port: {{ .Values.servicePort }}
+    targetPort: {{ .Values.containerPort }}
+---
+

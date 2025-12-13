@@ -1,0 +1,45 @@
+# https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    app: {{ .Values.appName }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+  replicas: {{ .Values.appReplicas }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+    spec:
+      containers:
+      - name: {{ .Values.appName }}
+        image: "{{ .Values.imageName }}:{{ .Values.imageTag }}"
+        #resources:
+        #  requests:
+        #    cpu: 100m
+        #    memory: 100Mi
+        #  limits:
+        #    cpu: 100m
+        #    memory: 100Mi
+        env:
+        {{- range .Values.containerEnvVars}}
+        - name: {{ .name }}
+          value: {{ .value | quote }}
+        {{- end}}
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+        #  name: {{ .Values.appName }}
+        #volumeMounts:
+        #- name: localtime
+        #  mountPath: /etc/localtime
+      #volumes:
+      #  - name: localtime
+      #    hostPath:
+      #      path: /usr/share/zoneinfo/Asia/Taipei
+      #restartPolicy: Always
+---
+
