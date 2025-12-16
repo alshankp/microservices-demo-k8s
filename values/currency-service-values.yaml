@@ -1,6 +1,6 @@
 appName: currencyservice
 appImage: docker.io/c0dysharma/currencyservice
-appVersion: 2
+appVersion: 3
 appReplicas: 2
 containerPort: 7000
 containerEnvVars: 
