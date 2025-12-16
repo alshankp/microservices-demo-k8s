@@ -1,6 +1,6 @@
 appName: checkoutservice
-appImage: c0dysharma/checkoutservice
-appVersion: 7
+appImage: docker.io/c0dysharma/checkoutservice
+appVersion: 8
 appReplicas: 2
 containerPort: 5050
 containerEnvVars: 
