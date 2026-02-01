@@ -1,6 +1,6 @@
 appName: cartservice
 appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/cartservice
-appVersion: v0.8.0
+appVersion: latest
 appReplicas: 2
 containerPort: 7070
 containerEnvVars: 

@@ -1,6 +1,6 @@
 appName: adservice
 appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/adservice
-appVersion: 5
+appVersion: latest
 appReplicas: 2
 containerPort: 9555
 containerEnvVars: 

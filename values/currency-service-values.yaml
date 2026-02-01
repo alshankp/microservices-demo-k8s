@@ -1,6 +1,6 @@
 appName: currencyservice
 appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/currencyservice
-appVersion: 3
+appVersion: latest
 appReplicas: 2
 containerPort: 7000
 containerEnvVars: 
