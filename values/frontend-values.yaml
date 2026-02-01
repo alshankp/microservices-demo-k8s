@@ -1,5 +1,5 @@
 appName: frontend
-appImage: docker.io/c0dysharma/frontend
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/frontend
 appVersion: 2
 appReplicas: 2
 containerPort: 8080

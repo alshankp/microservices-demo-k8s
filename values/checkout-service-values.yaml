@@ -1,5 +1,5 @@
 appName: checkoutservice
-appImage: docker.io/c0dysharma/checkoutservice
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/checkoutservice
 appVersion: 8
 appReplicas: 2
 containerPort: 5050

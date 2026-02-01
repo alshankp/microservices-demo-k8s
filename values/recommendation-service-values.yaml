@@ -1,5 +1,5 @@
 appName: recommendationservice
-appImage: docker.io/c0dysharma/recommendationservice
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/recommendationservice
 appVersion: 1
 appReplicas: 2
 containerPort: 8080

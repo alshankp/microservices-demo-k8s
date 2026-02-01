@@ -1,5 +1,5 @@
 appName: emailservice
-appImage: docker.io/c0dysharma/emailservice
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/emailservice
 appVersion: 3
 appReplicas: 2
 containerPort: 8080

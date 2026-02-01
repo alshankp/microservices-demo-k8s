@@ -1,5 +1,5 @@
 appName: shippingservice
-appImage: docker.io/c0dysharma/shippingservice
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/shippingservice
 appVersion: 1
 appReplicas: 2
 containerPort: 50051

@@ -1,5 +1,5 @@
 appName: productcatalogservice
-appImage: docker.io/c0dysharma/productcatalogservice
+appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/productcatalogservice
 appVersion: 2
 appReplicas: 2
 containerPort: 3550
