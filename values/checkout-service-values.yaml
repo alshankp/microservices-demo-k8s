@@ -1,6 +1,5 @@
 appName: checkoutservice
 appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/checkoutservice
-appVersion: latest
 appReplicas: 2
 containerPort: 5050
 containerEnvVars: 

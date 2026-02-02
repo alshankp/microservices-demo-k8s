@@ -1,6 +1,5 @@
 appName: productcatalogservice
 appImage: 667516053986.dkr.ecr.ap-south-1.amazonaws.com/productcatalogservice
-appVersion: latest
 appReplicas: 2
 containerPort: 3550
 containerEnvVars: 
