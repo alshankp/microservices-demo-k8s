@@ -6,6 +6,8 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 spec:
+  
+  revisionHistoryLimit: 5
   selector:
     matchLabels:
       app: {{ .Values.appName }}
@@ -32,14 +34,13 @@ spec:
         {{- end}}
         ports:
         - containerPort: {{ .Values.containerPort }}
-        #  name: {{ .Values.appName }}
-        #volumeMounts:
-        #- name: localtime
-        #  mountPath: /etc/localtime
-      #volumes:
-      #  - name: localtime
-      #    hostPath:
-      #      path: /usr/share/zoneinfo/Asia/Taipei
-      #restartPolicy: Always
+        
+        readinessProbe:
+          tcpSocket:
+            port: {{ .Values.containerPort }}
+          initialDelaySeconds: 10
+          periodSeconds: 5
+
+     
 ---
 
