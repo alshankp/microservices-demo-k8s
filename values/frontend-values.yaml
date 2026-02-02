@@ -22,3 +22,4 @@ containerEnvVars:
 
 servicePort: 80
 serviceType: LoadBalancer
+appVersion: "latest"

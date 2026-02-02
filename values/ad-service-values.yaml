@@ -7,3 +7,4 @@ containerEnvVars:
   value: "9555"
 
 servicePort: 9555
+appVersion: "latest"

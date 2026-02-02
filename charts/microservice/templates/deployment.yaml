@@ -6,7 +6,7 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 spec:
-  
+
   revisionHistoryLimit: 5
   selector:
     matchLabels:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.appName }}
-        image: "{{ .Values.appImage }}"
+        image: "{{ .Values.appImage }}:{{ .Values.appVersion }}"
         #resources:
         #  requests:
         #    cpu: 100m
@@ -34,13 +34,11 @@ spec:
         {{- end}}
         ports:
         - containerPort: {{ .Values.containerPort }}
-        
+
         readinessProbe:
           tcpSocket:
             port: {{ .Values.containerPort }}
           initialDelaySeconds: 10
           periodSeconds: 5
 
-     
 ---
-

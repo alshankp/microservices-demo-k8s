@@ -9,3 +9,4 @@ containerEnvVars:
   value: "1"
 
 servicePort: 7000
+appVersion: "latest"

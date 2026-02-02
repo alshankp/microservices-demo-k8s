@@ -8,3 +8,4 @@ containerEnvVars:
   value: "8080"
 
 servicePort: 5000
+appVersion: "latest"

@@ -9,3 +9,4 @@ containerEnvVars:
   value: "productcatalogservice:3550"
 
 servicePort: 8080
+appVersion: "latest"

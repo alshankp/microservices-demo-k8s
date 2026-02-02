@@ -9,3 +9,4 @@ containerEnvVars:
   value: "redis-cart:6379"
 
 servicePort: 7070
+appVersion: "latest"
